@@ -1,0 +1,203 @@
+.header-container{
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  background-color: rgb(20, 63, 56);
+  padding: 3px 20px;
+  color: #9e8f8f;
+
+}
+
+
+.logo{
+  font-family: 'Courier New', Courier, monospace;
+}
+.logo:hover{
+  color: black;
+  }
+.card-logo{
+  color: red;
+}
+.padding{
+  padding-top: 100px;
+}
+
+.wrapper{
+  display: flex;
+  height: 400px;
+  width: 1000px;
+  position: relative;
+  left: 130px;
+  background-color: rgb(20, 63, 56);
+}
+.wrapper .static-txt{
+  color:#9e8f8f;
+  font-size: 30px;
+  font-weight: 400;
+  
+  
+  position: relative;
+  left: 320px;
+}
+.wrapper .dynamic-txts{
+  margin-top: 150px;
+  height: 70px;
+  line-height: 90px;
+  overflow: hidden;
+}
+.dynamic-txts li{
+  list-style: none;
+  color: #9e8f8f;
+  font-size: 60px;
+  font-weight: 500;
+  position: relative;
+  top: 0;
+  animation: slide 5s steps(4) infinite;
+}
+@keyframes slide {
+  100%{
+    top: -360px;
+  }
+}
+.dynamic-txts li span{
+  position: relative;
+  margin: 5px 0;
+  line-height: 90px;
+}
+.dynamic-txts li span::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
+  animation: typing 1s steps(10) infinite;
+}
+@keyframes typing {
+  40%, 60%{
+    left: calc(100% + 30px);
+  }
+  100%{
+    left: 0;
+  }
+}
+
+.container{
+  width: 90%;
+  padding: 10px;
+  margin: 100px auto;
+  /* background: rgb(20, 63, 56); */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.box{
+  width: 250px;
+  height: 300px;
+  border: 5px solid  rgb(20, 63, 56);;
+  /* background: orange; */
+  margin: 0px 10px;
+  transition: 1s;
+
+}
+.box:hover{
+  transform: scale(1.3);
+  /* background: #ff800a; */
+  z-index: 2;
+  box-shadow: 2px 2px 2px #000;
+  
+}
+.btn{
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin: 5px;
+  color: black;
+}
+.btn:hover {
+  background-color: rgb(20, 63, 56);;
+  color: white;
+}
+
+.img{
+  width: 250px;
+  height: 300px;
+}
+.blogs,.blog{
+  text-align: center;
+}
+.product-container{
+  width: 75%;
+  display: inline-block;
+text-align: center;
+margin-left: 80px;
+  
+  
+  
+}
+.prouduct-list{
+  display: inline-block;
+  text-align: center;
+  margin-left: 60px;
+  padding-top: 10px;
+  margin-top: 50px;
+}
+.our{
+  width: 100%;
+  background-color:rgb(20, 63, 56); ;
+  height: 100px;
+}
+.ship{
+  height: 100px;
+  width: 90px;
+  color: white;
+}
+
+.ship2{
+  display:flex;
+  color:  #9e8f8f;
+  justify-content: space-around;
+}
+.foter{
+  padding-top: 100px;
+  text-align: center;
+  display: inline-block;
+  justify-content: space-around;
+  width: 100%;
+  height: 300px;
+  background-color: rgb(20, 63, 56);;
+}
+.para{
+  color: white;
+  padding: 50px;
+  font-family:'Courier New', Courier, monospace ;
+}
+.foter-end{
+  width: 100%;
+  height: 40px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+.mycard{
+    
+    margin-top: 50px;
+    display: inline-block;
+    border: 2px solid none;
+}
+.rs-colour{
+  color: rgb(177, 43, 43);
+}
+.card1{
+  padding-left: 50px;
+  margin-left: 70px;
+  
+}
+.checkout{
+  /* display: flex; */
+  border: 2px solid none;
+  margin-left: 600px;
+  align-items: center;
+}
